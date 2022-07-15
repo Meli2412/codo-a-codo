@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center;">Mundo Gatuno</title>
+    <script src="https://kit.fontawesome.com/acc7ed01f7.js" crossorigin="anonymous"></script>   
+    <link rel="shortcut icon" href="./imagenes/logogato.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+    <header id="header">  </header>
+    
+    <main id="mainRegistro">
+      <h2>Registro</h2>
+      <form name="Formulario" 
+            action="./show_data.html" 
+            target="_blank"
+            onsubmit="return validarRegistro()"
+            >
+
+          <label class="label" for="userName">Nombre: </label>
+          <input tabindex="1" type="text" name="userName" id="userName" required placeholder="Ingrese su nombre aqui..."
+            maxlength="40">
+        <br><br>
+          <label class="label" for="userApel">Apellido: </label>
+          <input tabindex="2" type="text" name="userApel" id="userApel" required placeholder="Ingrese su apellido aqui..."
+            maxlength="40">
+            <br><br>
+          <label class="label" for="birthdate">Fecha Nac.: </label>
+          <input tabindex="3" type="date" name="birthdate" min="01/01/1900" required>
+          <span id="mensaje" style="color:red;"></span>
+          <br><br>
+          <label class="label" for="dni">DNI: </label>
+          <input tabindex="4" type="number" name="dni" id="dni" min="0" maxlength="10" required
+            placeholder="Ingrese su DNI sin puntos..." maxlength="40">
+            <br><br>
+          <label class="label" for="textmail">E-mail: </label>
+          <input tabindex="5" type="email" name="textmail" id="textmail">
+          <br><br>
+          <label class="label" for="telefono">Telefono: </label>
+          <input tabindex="6" type="tel" name="telefono" required placeholder="Ingrese su telefono aqui...">
+          <br><br>
+          <label class="label" for="submit"></label>
+          <input tabindex="7" type="submit" value="Enviar">
+          <br><br>
+          <label class="label" for="reset"></label>
+          <input tabindex="8" type="reset" value="Blanquear">
+          <br><br><br><br><br><br>
+
+      </form>
+
+    </main>  
+        
+    <footer id="footer">  </footer>
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>
