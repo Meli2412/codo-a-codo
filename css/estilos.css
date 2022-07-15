@@ -1,0 +1,151 @@
+/*Esto es un comentario*/
+:root {
+  --cultured: #f8f9faff;
+  --cultured-2: #e9ecefff;
+  --gainsboro: #dee2e6ff;
+  --light-gray: #ced4daff;
+  --cadet-blue-crayola: #adb5bdff;
+  --sonic-silver: #6c757dff;
+  --davys-grey: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
+  font-size: 14px;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  /*font-size: 1.5rem;*/
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+main {
+  padding-top: 160px;
+}
+
+#mainRegistro{
+  width: 100vw;
+  display: block;
+  padding-left: 5vw;
+}
+
+#header {
+  text-align: center;
+  color: var(--cultured);
+  background-color: var(--onyx);
+ /* padding-bottom: 1%;*/
+  text-decoration: none;
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+}
+
+
+#miImg:hover {
+  overflow: hidden;
+  transition-duration: 2s;
+  transition-property: transform;
+  transform: rotateY(360deg);
+  display: inline;
+}
+
+#divHeader{
+  display: inline;
+}
+
+.nav-header-item {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-header-item:hover {
+  background-color: var(--davys-grey);
+  color: black;
+}
+
+#footer {
+  text-align: left;
+  font-size: 0.5 rem;
+  color: var(--cultured);
+  background-color: var(--onyx);
+}
+
+h1 {
+  color: var(--cultured);
+  background-color: var(--onyx);
+}
+
+
+.imgIndex {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.imgrazas {
+  width: 40%;
+  min-width: 40px;
+  max-width: 300px;
+}
+
+.clase-raza {
+  display: inline-block;
+  justify-content: center;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 2px;
+  justify-content: center;
+}
+
+.item {
+  padding-bottom: 5%;
+}
+
+
+ .label{
+  display: inline-block;
+  text-align: right;
+  width: 25vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /*celulares*/
+  .clase-raza {
+    width: 100%;
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /*tablets*/
+  .clase-raza {
+    width: 50%;
+
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Large devices (laptops/desktops, 992px and up) */
+  .clase-raza {
+    width: 33.33%;
+  }
+}
+
+
